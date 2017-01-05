@@ -1,11 +1,13 @@
 // JavaScript File
 $(document).ready(function() {
 
-   $.getJSON(
+          $("#btn").click(function(){
+         var input3 = $("#input1").val();
+          
+          $.getJSON(
      
-      "https://api.giphy.com/v1/gifs/search?q=meme&api_key=dc6zaTOxFJmzC",
-     
-     
+      "https://api.giphy.com/v1/gifs/search?q="+ input3 + "&api_key=dc6zaTOxFJmzC",
+      
       function(response) {
         console.log(response);
         $("#gif").append("<img src=" + response.data[0].images.original.url + ">");
@@ -15,5 +17,10 @@ $(document).ready(function() {
         $("#gif").append("<img src=" + response.data[4].images.original.url + ">");
         
       });
+    $("#gif").show(); 
   });
-
+ $("#btnc").click(function(){
+     $("#input3").remove();
+     $("#gif").hide();
+ })
+});
