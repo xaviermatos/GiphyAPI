@@ -6,7 +6,7 @@ $(document).ready(function() {
           
           $.getJSON(
      
-      "https://api.giphy.com/v1/gifs/search?q="+ input3 + "&api_key=dc6zaTOxFJmzC",
+      "https://api.giphy.com/v1/gifs/search?q="+ input3 + "&api_key=nWiwnXzkAR8XoW5a5HBucYweWePM3fNn",
       
       function(response) {
         console.log(response);
