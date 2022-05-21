@@ -20,6 +20,7 @@ $(document).ready(function() {
     $("#gif").show(); 
   });
  $("#btnc").click(function(){
+     $("#input1").remove();
      $("#input3").remove();
      $("#gif").hide();
  })
